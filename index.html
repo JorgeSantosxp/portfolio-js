@@ -26,23 +26,25 @@
 <body>
     <main class="main">
         <header class="header">
-            <img src="/assets/img/my-photo.jpg" alt="Foto do Jorge Santos" class="photo">
+            <img src="/assets/img/my-photo.jpg" alt="Foto de Perfil" class="photo" id="profile.photo">
 
-            <h1 class="title">Olá, <br> eu sou o Jorge Santos</h1>
+            <h1 class="title">
+                Olá, <br> eu sou <span id="profile.name">Carregando...</span>
+            </h1>
 
             <div class="information">
-                <p class="user">Studant Developer</p>
-                <p class="location">Bahia - BR</p>
+                <p class="job" id="profile.job">Carregando...</p>
+                <p class="location" id="profile.location">Carregando...</p>
                 <p class="phone">
-                    <a href="tel:(71) 98718-6497">(71) 98718-6497</a>
+                    <a href="tel:(71) 98718-6497" id="profile.phone">Carregando...</a>
                 </p>
                 <p class="email">
-                    <a href="mailto:jorgesantos.xp@gmail.com">jorgesantos.xp@gmail.com</a>
+                    <a href="mailto:jorgesantos.xp@gmail.com" id="profile.email">carregando@gmail.com</a>
                 </p>
             </div>
         </header>
 
-        <section class="acordeon open">
+        <section class="acordeon">
             <button class="trigger" type="button">
                 <h2>Skills</h2>
             </button>
@@ -51,31 +53,15 @@
                 <div class="skills">
                     <section class="tools">
                         <h3>Ferramentas</h3>
-                        <ul>
-                            <li>
-                                <img src="/assets/img/icons/react.png" alt="react" title="react">
-                            </li>
-                            <li>
-                                <img src="/assets/img/icons/python.png" alt="python" title="python">
-                            </li>
-                            <li>
-                                <img src="/assets/img/icons/java.png" alt="java" title="java">
-                            </li>
-                            <li>
-                                <img src="/assets/img/icons/dot-net.png" alt="net" title="net">
-                            </li>
-
+                        <ul id="profile.skills.hardSkills">
                         </ul>
                     </section>
                     <section class="personal">
                         <h3>Pessoal</h3>
-                        <ul>
-                            <li>Facilidade com tarefas</li>
-                            <li>Comunicação</li>
-                            <li>Trabalho em Equipe</li>
-                            <li>Organização</li>
-                            <li>Comprometimento</li>
-                            <li>Flexibilidade</li>
+                        <ul id="profile.skills.softSkills">
+                            <li>Carregando...</li>
+                            <li>Carregando...</li>
+                            <li>Carregando...</li>
                         </ul>
                     </section>
                 </div>
@@ -92,11 +78,9 @@
             </button>
 
             <div class="content">
-                <ul class="languages">
-                    <li>Portugues</li>
-                    <li>Ingles</li>
-                    <li>Italiano</li>
-                    <li>Espanhol</li>
+                <ul class="languages" id="profile.skills.languages">
+                    <li>Carregando...</li>
+
                 </ul>
 
             </div>
@@ -109,19 +93,8 @@
             </button>
 
             <div class="content">
-                <ul class="portfolio">
-                    <li>
-                        <h3 class="title github">Criando um App de lembrete</h3>
-                        <a href="https://www.google.com.br" target="_blank">www.google.com.br</a>
-                    </li>
-                    <li>
-                        <h3 class="title github">Criando um App de lembrete</h3>
-                        <a href="https://www.google.com.br" target="_blank">www.google.com.br</a>
-                    </li>
-                    <li>
-                        <h3 class="title">Criando um App de lembrete</h3>
-                        <a href="https://www.google.com.br" target="_blank">www.google.com.br</a>
-                    </li>
+                <ul class="portfolio" id="porfile.portfolio">
+
                 </ul>
             </div>
 
@@ -133,23 +106,8 @@
             </button>
 
             <div class="content">
-                <ul class="experience">
-                    <li>
-                        <h3 class="title github">Front-end Developer / Dio.me</h3>
-                        <span class="period">Jan 2020 - Current</span>
-                        <a href="https://www.google.com.br" target="_blank">www.google.com.br</a>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident harum odio natus tenetur.
-                            Fugit aspernatur rem totam ut inventore maiores reiciendis, ad corrupti nostrum earum magni,
-                            est voluptates voluptas nihil.</p>
-                    </li>
-                    <li>
-                        <h3 class="title github">Front-end Developer / Dio.me</h3>
-                        <span class="period">Jan 2020 - Current</span>
-                        <a href="https://www.google.com.br" target="_blank">www.google.com.br</a>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident harum odio natus tenetur.
-                            Fugit aspernatur rem totam ut inventore maiores reiciendis, ad corrupti nostrum earum magni,
-                            est voluptates voluptas nihil.</p>
-                    </li>
+                <ul class="experience" id="profile.professionalExperience">
+
                 </ul>
             </div>
 
@@ -158,6 +116,8 @@
     </main>
 
     <script src="/assets/js/acordeon.js"></script>
+    <script src="/assets/js/api.js"></script>
+    <script src="/assets/js/main.js"></script>
 </body>
 
 </html>
